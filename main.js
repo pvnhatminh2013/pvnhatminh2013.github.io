@@ -4,9 +4,9 @@
 function image_toggle() {
   let img_tag = document.getElementbyId("image").innerHTML;
   if (img_tag.includes("hidden")) {
-    document.getElementbyId("image") = "\n  <img src="cat.jpg" width="255" height="255" style="display: block; margin: auto;">\n";
+    document.getElementbyId("image") = "\n  <img src=\"cat.jpg\" width=\"255\" height=\"255\" style=\"display: block; margin: auto;\">\n";
   }
   else {
-    document.getElementbyId("image") = "\n  <img src="cat.jpg" width="255" height="255" style="display: block; margin: auto;" hidden>\n";
+    document.getElementbyId("image") = "\n  <img src=\"cat.jpg\" width=\"255\" height=\"255\" style=\"display: block; margin: auto;\" hidden>\n";
   }
 }
