@@ -4,7 +4,7 @@
 function image_toggle() {
   let img_tag = String(document.getElementById("image").innerHTML);
   if (img_tag.includes("hidden")) {
-    document.getElementNyId("image") = "\n  <img src=\"cat.jpg\" width=\"255\" height=\"255\" style=\"display: block; margin: auto;\">\n";
+    document.getElementById("image") = "\n  <img src=\"cat.jpg\" width=\"255\" height=\"255\" style=\"display: block; margin: auto;\">\n";
   }
   else {
     document.getElementById("image") = "\n  <img src=\"cat.jpg\" width=\"255\" height=\"255\" style=\"display: block; margin: auto; visibility: hidden;\">\n";
