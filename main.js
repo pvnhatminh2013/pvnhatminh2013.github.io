@@ -1,6 +1,6 @@
 // well i'll let the second time touching me slide
 // wait
-// that was badphrasing, gosh kill me now
+// that was bad phrasing, gosh kill me now
 function image_toggle() {
   let img_tag = String(document.getElementById("image").innerHTML);
   if (img_tag.includes("hidden")) {
@@ -13,4 +13,7 @@ function image_toggle() {
 function you_got_mail() {
   let audio = new Audio("youve-got-mail.mp3");
   audio.play();
+}
+function mail_anchor() {
+  document.getElementById("mail").addEventListener("click", you_got_mail());
 }
